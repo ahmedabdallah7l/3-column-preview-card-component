@@ -117,7 +117,7 @@ body
  main
  {
   max-width: 60rem ;
-  background-color: tomato;
+
   
   border-radius: 1rem;
  }
@@ -209,4 +209,30 @@ img
  background-color: var(--third-card);
  border: solid 2px var(--text-clr);
  transition: all 200ms ease;
+}
+
+@media only screen and (max-width:768px)
+{
+  .items
+  {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    padding: 3rem;
+  }
+  .item.one
+  {
+   
+   border-bottom-left-radius:0rem;
+   border-top-left-radius:1rem ;
+   border-top-right-radius:1rem;
+  }
+
+  .item.three
+  {
+   border-top-right-radius:0rem ;
+   
+   border-bottom-left-radius:1rem ;
+   border-bottom-right-radius:1rem;
+  }
 }
